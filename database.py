@@ -8,4 +8,4 @@ engine = create_engine(SQLALCHEMY_DATABASE_URL, echo= True)
 
 Base = declarative_base()
 
-session = sessionmaker()
+Session = sessionmaker()

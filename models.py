@@ -11,6 +11,7 @@ class User(Base):
     password = Column(Text,nullable=False)
     is_staff = Column(Boolean,default=False)
     is_active = Column(Boolean,default=False)
+    orders=relationship('Order',back_populates='user')
 
     def __repr__(self):
         return f"<user {self.username}>"
@@ -40,7 +41,7 @@ class Order(Base):
     pizza_size = Column(ChoiceType(choices=PIZZA_SIZES),default="SMALL")
     flavour = Column(String, nullable=False)
     user_id = Column(Integer,ForeignKey('user.id'))
-    user = relationship('User',back_populates='orders')
+    user=relationship('User',back_populates='orders')
 
     def __repr__(self):
-        return f"<Order{self.id}>"
+        return f"<Order {self.id}>"
