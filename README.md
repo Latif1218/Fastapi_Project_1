@@ -34,3 +34,16 @@ engine=create_engine('postgresql://postgres:<username>:<password>@localhost/<db_
 - Create your database by running ``` python init_db.py ```
 - Finally run the API
 ``` uvicorn main:app ``
+
+
+
+### haw to learn
+- create environment
+- create requirements.txt
+- create main.py 
+- create auth_routs.py
+- create order_routs.py
+- create database.py
+- create medels.py
+- create database.py
+- create init_db.py 
