@@ -1,6 +1,6 @@
 # Fastapi_Project_1
 ## PIZZA DELIVERY API
-This is a REST API for a Pizza delivery service built for fun and learning with FastAPI, SQLAlchemy and PostgreSQL. The video playlist is 
+This is a REST API for a Pizza delivery service built for fun and learning with FastAPI, SQLAlchemy and PostgreSQL.
 
 
 ## ROUTES TO IMPLEMENT
