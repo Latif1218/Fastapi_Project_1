@@ -32,3 +32,34 @@ class Setting(BaseModel):
 class LoginModel(BaseModel):
     username:str
     password:str
+
+
+
+class OrderModel(BaseModel):
+    id: Optional[int]
+    quantity: int
+    order_status: Optional[str] = "PENDING"
+    pizza_size:Optional[str] = "SMALL"
+    flavour: str = "PEPPERONI"
+    user_id:Optional[int]
+
+    class config:
+        orm_model = True
+        schema_extra={
+            "example":{
+                "quantity":2,
+                "pizza_size":"LARGE",
+                "flavour":"PEPPERONI"
+            }
+        }
+
+class OrderStatusModel(BaseModel):
+    order_status:Optional[str]="PENDING"
+
+    class Config:
+        orm_mode = True
+        schema_extra = {
+            "example":{
+                "order_status":"PENDING"
+            }
+        }
