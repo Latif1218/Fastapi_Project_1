@@ -43,7 +43,7 @@ class OrderModel(BaseModel):
     flavour: str = "PEPPERONI"
     user_id:Optional[int]
 
-    class config:
+    class config:              
         orm_model = True
         schema_extra={
             "example":{
