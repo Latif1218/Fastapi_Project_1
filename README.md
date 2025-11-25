@@ -19,7 +19,6 @@ This is a REST API for a Pizza delivery service built for fun and learning with 
 | *GET* | ```/orders/user/order/{order_id}/``` | _Get user's specific order_|
 | *GET* | ```/docs/``` | _View API documentation_|_All users_|
 
-.patch('/order/update/{id}')
 ## How to run the Project
 - Install Postgreql
 - Install Python
