@@ -6,6 +6,7 @@ This is a REST API for a Pizza delivery service built for fun and learning with 
 ## ROUTES TO IMPLEMENT
 | METHOD | ROUTE | FUNCTIONALITY |ACCESS|
 | ------- | ----- | ------------- | ------------- |
+| *PATCH* | ```/order/update/{order_id}``` | _Update_order_status_| _All users_|
 | *POST* | ```/auth/signup/``` | _Register new user_| _All users_|
 | *POST* | ```/auth/login/``` | _Login user_|_All users_|
 | *POST* | ```/orders/order/``` | _Place an order_|_All users_|
@@ -18,6 +19,7 @@ This is a REST API for a Pizza delivery service built for fun and learning with 
 | *GET* | ```/orders/user/order/{order_id}/``` | _Get user's specific order_|
 | *GET* | ```/docs/``` | _View API documentation_|_All users_|
 
+.patch('/order/update/{id}')
 ## How to run the Project
 - Install Postgreql
 - Install Python
